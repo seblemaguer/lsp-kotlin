@@ -12,14 +12,13 @@
 (require 'lsp-mode)
 (require 'lsp-common)
 
-(defcustom lsp-kotlin-server-cmd
-  "kotlin-language-server"
+(defcustom lsp-kotlin-server-cmd "kotlin-language-server"
+  "Command to start kotlin language server"
   :group 'lsp-kotlin
   :risky t
   :type '(string))
 
-(defcustom lsp-kotlin-server-args
-  '()
+(defcustom lsp-kotlin-server-args '()
   "Extra arguments for the kotlin-stdio language server"
   :group 'lsp-kotlin
   :risky t
