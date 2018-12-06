@@ -26,7 +26,7 @@
 
 (defun lsp-kotlin--ls-command ()
   "Generate the language server startup command."
-  `(,@lsp-kotlin-server-cmd ,@lsp-kotlin-server-args))
+  `(,lsp-kotlin-server-cmd ,@lsp-kotlin-server-args))
 
 (lsp-define-stdio-client lsp-kotlin "kotlin" nil nil
                          :command-fn 'lsp-kotlin--ls-command)
